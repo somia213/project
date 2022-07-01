@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar"  dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="..\img\logo1.png" />
+    <title>مركز الحاسب الالى - كلية تجارة</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css">
+  </head>
+  <body class="custom-scrollbar" id="employee-m4">
+    <!-- nav section -->
+  <header class="s" id="nav">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+      <a href="..\index.html"><img src="..\img\logo.png" alt="مركز الحاسب الآلى" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+      </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="..\index.html" class="nav-link" aria-current="page">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a href="employee-m1.html" class="nav-link">ادارة طلبات الطلاب</a>
+              </li>
+              <li class="nav-item">
+                <a href="employee-m2.html" class="nav-link">ادارة الكورسات بالمركز</a>
+              </li> 
+
+              <li class="nav-item">
+                <a href="employee-m4.html" class="nav-link active">ادارة طباعة التقرير</a>
+              </li>
+
+                  </ul>
+          </div>
+        </div>
+      </nav>
+      </div>
+    </header>
+
+<div class="alert donereport alert-success" id="alert" style="position: fixed;padding: 80px 0px;width: 70%;right:15%;text-align: center;z-index: 10000;font-size: 40px;border-radius: 20px;">
+  
+  <h3>
+  تم إكمال التقرير بنجاح
+  </h3>
+  
+  <div class="mt-4">
+  <button class="btn btn-primary done">موافق</button>
+
+  </div>
+</div>
+
+
+
+
+  <div style="background-color:#eee;margin: 40px 0px;">
+    <div class="" style="padding: 45px 0px;">
+        <h3 class="container-fluid mb-5" style="color: #009aff;font-family: system-ui;cursor: pointer;font-size: 30px;font-weight: bold;">
+طباعة التقارير            </h3>
+<div class="mb-5 container-fluid nameCourSe" style="display: flex;align-items: baseline;">
+<h4 style="color: #009aff;font-family: system-ui;cursor: pointer;display: inline;">اسم الكورس
+
+</h4>
+<input type="text" class="coureseName">
+</div>
+<div class="mb-5 container-fluid nameCourSe" style="display: flex;align-items: baseline;">
+<h4 style="color: #009aff;font-family: system-ui;cursor: pointer;display: inline;">ID
+
+</h4>
+<input type="text" class="coureseName" style="margin-right: 148px;">
+</div>
+<div class="mb-5 container-fluid nameCourSe" style="display: flex;align-items: baseline;">
+<h4 style="color: #009aff;font-family: system-ui;cursor: pointer;display: inline;">عدد الساعات
+
+</h4>
+<input type="number"  class="coureseName">
+</div>
+
+<form action="#">
+<table class="table-data">
+<thead>
+<tr>
+    <th>إسم الطالب</th>
+    <th>المدينة</th>
+    <th>تاريخ الميلاد</th>
+    <th>الرقم القومي</th>
+    <th>تخطي نسبة الحضور</th>
+    <th>إجتاز الإختبار</th>
+</tr>
+</thead>
+<tbody>
+<tr class="newRow newempy manageRow ">
+    <td scope="row">
+    <input type="text" class="out-focus" id="studentName" value="" style="padding: 10px 12px;width: auto;margin-top: 10px;font-family: system-ui;background: transparent;outline: none !important;border: none !important;">
+
+    </td>
+    <td>
+      <input type="text" class="out-focus" id="cityName" value="" style="padding: 10px 12px;width: auto;margin-top: 10px;font-family: system-ui;background: transparent;outline: none !important;border: none !important;">
+
+    </td>
+    <td>
+      <input type="date" class="out-focus" id="dateName" style="padding: 10px 12px;width: auto;margin-top: 10px;font-family: system-ui;background: transparent;outline: none !important;border: none !important;">
+
+    </td>
+    <td>
+      <input type="number" class="out-focus" id="idName" value="" style="padding: 10px 12px;width: auto;margin-top: 10px;font-family: system-ui;background: transparent;outline: none !important;border: none !important;">
+
+    </td>
+  
+    <td>
+    <!-- <input type="number" class="out-focus" id="deg" style="padding: 10px 12px;width: auto;margin-top: 10px;font-family: system-ui;background: transparent;outline: none !important;border: none !important;"> -->
+
+      <div class="audience">
+        <h5></h5>
+        <div style="display: flex;justify-content: space-around;align-items: baseline;margin-bottom: 5px;">
+      <a style="text-decoration: none;font-weight: bold;color: #000; cursor: pointer;border-left: 12px solid transparent;" class="yes">نعم</a>
+      <a style="text-decoration: none;font-weight: bold;color:#000; cursor: pointer;" class="no">لا</a>
+      </div>
+
+        <div style="text-align: center;" class="showIcon"></div>  
+    </div>
+
+    </td>
+    <td>
+      <!-- <input type="number" class="out-focus" id="deg" style="padding: 10px 12px;width: auto;margin-top: 10px;font-family: system-ui;background: transparent;outline: none !important;border: none !important;"> -->
+
+    <div class="audience">
+      <h5></h5>
+      <div style="display: flex;justify-content: space-around;align-items: baseline;margin-bottom: 5px;">
+      <a style="text-decoration: none;font-weight: bold;color: #000; cursor: pointer;border-left: 12px solid transparent;" class="yes">نعم</a>
+      <a style="text-decoration: none;font-weight: bold;color:#000; cursor: pointer;" class="no">لا</a>
+      </div>
+
+        <div style="text-align: center;" class="showIcon"></div>  
+    </div>
+
+    </td>
+</tr>
+</table>
+</form>
+<div class="submit container-fluid">
+<div style="display: flex;justify-content: space-between;">
+<button type="submit" class="btn btn-primary mt-5 sendData" style="font-family: system-ui;font-weight:bold">طباعة </button>
+<button type="submit" class="btn btn-danger mt-5 createData" style="font-family: system-ui;font-weight:bold">إنشاء بيانات جديدة </button>
+
+<button class="btn plusRow mt-5 createNewdata" plus="0" style="background-color: #00cbff; color: #fff;">إضافة بيانات<i class="fa-solid fa-plus" style="margin-right: 10px;"></i></button>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+<footer style="background-color:#37506d;margin-top: 100px;" class="footer">
+  <div class="container" style="padding-top: 110px;position: relative;">
+      <div class="footercontent">
+  
+      <div class="follow" style="text-align: center;">
+      <div class="followme" >
+
+      </div>
+      </div>
+  
+  <p style="text-align: center;">
+      <img src="../img/silver.png" alt="" >
+  </p>
+      <div class="iconwarper">
+  
+      <a href="https://www.facebook.com/crcs.fca/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-whatsapp" ></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+      </div>
+  
+      <ul class="footerlink">
+      <li><a href="Home.html" >Home</a></li>
+      <li><a href="Services.html"  class="a1 aa">Services</a></li>
+      <li><a href="AboutUs.html" class="ac" >AboutUs</a></li>
+      <li><a href="HelpCentes.html"  class="a1 ab">HelpCentes</a></li>
+  </ul>
+      <p style="font-family: system-ui; text-align: center; color:#a3fffc;">الحقوق محفوظه كلية التجاره © 2022
+      </p>
+  </div>
+      </div>
+  
+  </footer>
+
+
+
+
+<script src="../js/popper.min.js"></script>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/allproject.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/all.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/allproject.js"></script>
+<script src="css/bootstrap/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+<script src="css/bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+<script src="css/bootstrap/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.js"></script>
+
+
+
+  </body>
+  </html>

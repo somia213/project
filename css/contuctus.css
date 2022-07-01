@@ -1,0 +1,112 @@
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 175px);
+    flex-direction: column;
+}
+form{
+    background-color: rgba( 237, 237, 237, 0.7 );
+    box-shadow: 0 8px 32px 0 #37506d;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 60%;
+    padding: 20px;
+
+}
+.contant{
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 25px 0px;
+    padding-right: 10px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid grey;
+    color: hsl(212, 33%, 32%);
+    text-align: right;
+}
+
+input:focus{
+    outline:transparent;
+    border-bottom:3px solid hsl(212, 33%, 32%);
+    border-left :3px solid hsl(212, 33%, 32%);
+}
+
+input:hover{
+    border-bottom:3px solid hsl(212, 33%, 32%);
+    border-left :3px solid hsl(212, 33%, 32%);
+}
+textarea{
+    color: hsl(212, 33%, 32%);
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 150px;
+    /* padding: 10px; */
+    padding: 10px 0px;
+    padding-right: 10px;
+    text-align: right;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom: 3px solid grey;
+    border-left: 3px solid grey;
+}
+textarea:focus{
+    outline:transparent;
+    border-bottom:3px solid hsl(212, 33%, 32%);
+    border-left :3px solid hsl(212, 33%, 32%);
+}
+
+textarea:hover{
+    border-bottom:3px solid hsl(212, 33%, 32%);
+    border-left :3px solid hsl(212, 33%, 32%);
+}
+
+
+
+.leftdiv{
+    width: 45%;
+}
+.rightdiv{
+    width: 45%;
+    
+}
+.btn{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 10px  auto;
+    border: none;
+    background-color: #37506d;
+    color: #a3fffc;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    color: #a3fffc;
+    width: 160px;
+    box-shadow: 2px 2px 5px 2px #0000006b;
+}
+
+
+@media (max-width:768px){
+    .contant{
+        flex-direction: column;
+        gap:2px;
+    };
+}

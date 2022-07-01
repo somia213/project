@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.courses{
+    padding: 100px 0;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.courses-contant{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+}
+.card{
+    box-shadow: 2px 2px 5px 2px #0000006b;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.card-image img{
+    max-width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.card-info{
+    text-align: center;
+}
+.card-info h3{
+    color: hsl(212, 33%, 32%);
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.card-info p{
+    color: grey;
+    margin-bottom: 5px;
+}
+.card-info span{
+    display: block;
+    margin-bottom: 5px;
+}
+.card-info{
+  padding: 10px;
+}
+.card-body button{
+    display: block;
+    width: 100%;
+    background-color: hsl(212, 33%, 32%);
+    font-size: 20px;
+    padding: 10px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    color: #a3fffc;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.card-body button:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 2px 5px 2px #0000006b;
+}
